@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -31,7 +32,7 @@ int main() {
 
     std::vector<int> result;
     for (int i = 0; i < n; i++) {
-        if (numbers[i] % 3 == 0 && numbers[i] <= minElement) {
+        if (isMultipleOfThree(numbers[i]) && numbers[i] <= minElement) {
             result.push_back(numbers[i]);
         }
     }
