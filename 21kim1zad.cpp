@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -31,10 +30,12 @@ int main() {
     int minElement = findMinElement(numbers);
 
     std::vector<int> result;
-    for (int i = 0; i < n; i++) {
+    int i = 0;
+    while (i < n - 1) {  // Исправлено здесь
         if (isMultipleOfThree(numbers[i])) {
             result.push_back(numbers[i]);
         }
+        i++;
     }
 
     outputFile << result.size() << std::endl;
