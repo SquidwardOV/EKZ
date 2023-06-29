@@ -32,7 +32,7 @@ int main() {
 
     std::vector<int> result;
     for (int i = 0; i < n; i++) {
-        if (isMultipleOfThree(numbers[i]) && numbers[i] <= minElement) {
+        if (isMultipleOfThree(numbers[i])) {
             result.push_back(numbers[i]);
         }
     }
